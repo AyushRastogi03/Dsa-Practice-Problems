@@ -2,7 +2,7 @@ package topic1_Mathematics;
 
 import java.util.Scanner;
 
-public class ComputingPower {
+public class ComputingPower { // calculate power n = 10 , k = 2 pow(10,2)
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -22,7 +22,7 @@ public class ComputingPower {
 		System.out.println("output - "+ res);
         
 		// effective 
-		System.out.println("Effective");        //Θ(log n) alt 233
+		System.out.println("Effective");        //Θ(log n) 
 		int tem = power(n,k);
 		
 		System.out.println("output - " + tem);
