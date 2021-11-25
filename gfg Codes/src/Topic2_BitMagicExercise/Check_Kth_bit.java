@@ -36,7 +36,6 @@ class Solve{
 			return "Yes";
 		}
 		
-			return "No" ;
-		
+			return "No" ;	
 	}
 }

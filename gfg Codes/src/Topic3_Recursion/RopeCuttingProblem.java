@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class RopeCuttingProblem {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {// if s = 5 , a=1 b=2 c = 5 ,, we will maximum cut when we will make 1 cut 5 times so maximujm cut = 5
 		// TODO Auto-generated method stub
             
 		Scanner sc = new Scanner(System.in);

@@ -14,6 +14,9 @@ public class SumOfNatural {
 		int sum = Natural(s);
 		
 		System.out.println("Sum Of natural no - " + sum);
+		
+		
+		
 
 	}
 	
