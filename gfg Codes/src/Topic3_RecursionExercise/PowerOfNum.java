@@ -23,9 +23,21 @@ public class PowerOfNum {
 }
 
 class Po{
-	public int po(int n,int p) {
-		
-		
-	
-	}
+
+		 long po(int n,int p)
+		    {
+		        if(p==0){
+		            return 1 ;
+		        }
+		        if(p%2==0){
+		            long y = po(n,p/2);
+		            return (y%1000000007 * y%1000000007)%1000000007;
+		        }
+		        else{
+		            return (n*po(n,p-1)%1000000007)%1000000007 ;
+		        }
+		        //Your code here
+		       	
+		        
+		    }
 }
