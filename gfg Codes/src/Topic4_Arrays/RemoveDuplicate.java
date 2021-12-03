@@ -17,13 +17,28 @@ public class RemoveDuplicate {
 			arr[i] = sc.nextInt();
 		}
 		
-	Remove(arr,a);
+   int[] d = 	Remove(arr,a);
+   
+   for(int i=0;i<d.length;i++) {
+	   System.out.print(d[i] + " ");
+   }
 	
-//	for(int i=0;i<f.length;i++) {
-//		System.out.println(f[i]);
-//	}
-	 
-	 System.out.println("hello");
+   System.out.println();
+	// Second method 
+	
+	int res=1 ;
+	
+	for(int i=1;i<a;i++) {
+		if(arr[i]!=arr[res-1]) {
+			
+			arr[res] = arr[i];
+			res++;
+		}
+		
+		
+	}
+	System.out.println(res);
+
 
 	}
 	
@@ -45,7 +60,7 @@ public class RemoveDuplicate {
 			
 			ae[i] = temp[i];
 		}
-		System.out.println("hello1");
+		
 		return ae ;
 	}
 
