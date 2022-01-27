@@ -1,5 +1,6 @@
 package Topic4_Arrays;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TappingRainWater {
@@ -34,10 +35,20 @@ public class TappingRainWater {
 		for(int i=1;i<n;i++) {
 			lmax[i] = max(lmax[i-1],arr[i]);
 		}
+		ArrayList<Integer> al = new ArrayList<Integer>();
+		for(int i : lmax) {
+			al.add(i);
+		}
+		System.out.println(al);
 		rmax[n-1] = arr[n-1];
 		for(int i=n-2;i>=0;i--) {
 			rmax[i] = max(rmax[i+1],arr[i]);
 		}
+		ArrayList<Integer> ald = new ArrayList<Integer>();
+		for(int i : rmax) {
+			ald.add(i);
+		}
+		System.out.println(ald);
 		int res =0;
 		for(int i=1;i<n-1;i++) {
 			res+=(min(lmax[i],rmax[i])-arr[i]);
@@ -71,7 +82,7 @@ public class TappingRainWater {
 		if(res>0)
 		    System.out.println("naive - " + res);
 		else
-			System.out.println("better - 0");
+			System.out.println("naive - 0");
 	}
 	
 	public static int min(int a,int b) {
