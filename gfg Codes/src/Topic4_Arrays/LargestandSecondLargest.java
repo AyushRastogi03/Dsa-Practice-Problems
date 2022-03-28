@@ -58,7 +58,7 @@ public class LargestandSecondLargest {
 			
 		}
 		
-		return p ;
+		return p;
 	}
 	
 }
