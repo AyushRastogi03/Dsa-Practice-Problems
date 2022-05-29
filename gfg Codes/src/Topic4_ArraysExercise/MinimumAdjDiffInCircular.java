@@ -1,4 +1,4 @@
-package Topic4_ArraysExercise;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                package Topic4_ArraysExercise;
 
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ public class MinimumAdjDiffInCircular {
 	public static void main(String[] args) {
 		 // TODO Auto-generated method stub
    
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in); 
 		
 		int n = sc.nextInt();
 		

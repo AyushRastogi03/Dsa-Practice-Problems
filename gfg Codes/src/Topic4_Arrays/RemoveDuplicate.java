@@ -34,8 +34,7 @@ public class RemoveDuplicate {
 			arr[res] = arr[i];
 			res++;
 		}
-		
-		
+				
 	}
 	System.out.println(res);
 

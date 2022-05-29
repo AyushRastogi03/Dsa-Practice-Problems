@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MaximumSubArray {
 
-	public static void main(String[] args) {
+	 static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
 		Scanner sc = new Scanner(System.in);
