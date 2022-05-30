@@ -2,7 +2,7 @@ package Liv;
 
 import java.util.Scanner;
 
-public class ReverseString {
+public class ReverseString {  // reverse by word and then string
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
