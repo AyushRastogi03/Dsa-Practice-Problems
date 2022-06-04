@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 
 
@@ -41,8 +42,10 @@ public class ReverseAnArray {
 			System.out.println(a[i]);
 		}
 		
-		//List<Integer> list =  Arrays.stream(ints).boxed().collect(Collectors.toList());
+		List<Integer> list =  Arrays.stream(a).boxed().collect(Collectors.toList());
 		
-	} 
+	}
+	
+	
 
 }
