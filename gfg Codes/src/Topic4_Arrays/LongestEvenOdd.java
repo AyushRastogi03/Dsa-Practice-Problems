@@ -25,6 +25,7 @@ public class LongestEvenOdd {
 			}
 			else {
 				res  =max(res,c);
+				c = 1 ;
 			}
 		}
 		

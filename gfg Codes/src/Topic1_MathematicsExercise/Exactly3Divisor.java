@@ -48,11 +48,10 @@ public class Exactly3Divisor {
 			if(isPrime(i))
 				c++;
 		}
+	
 		
-		System.out.println("effective method ans - " + c);
-		
-		
-		}
+	}
+
 	
 	static int CountDivisor(int l) {
 		int count=0;

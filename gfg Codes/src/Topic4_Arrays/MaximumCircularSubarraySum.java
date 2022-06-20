@@ -64,7 +64,7 @@ public class MaximumCircularSubarraySum {
     	for(int i=0;i<n;i++) {
     	   
     		arrsum+=arr[i];
-    		arr[i] = -arr[i];
+    		arr[i] = -arr[i]; // inplace of reverting the array we can also create metho of minsubarraysum and subtract with total sum 
     		
     	}
     	

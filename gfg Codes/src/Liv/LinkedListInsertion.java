@@ -80,6 +80,105 @@ public class LinkedListInsertion {
 		current.next = newNode ;
 		
 		
+	} 
+	
+	public void deleteAtBegining() {
+		
+		if(head == null) {
+			System.out.println("List is empty") ;
+		}
+		else {
+			if(head!=tail) {
+				head = head.next ;  
+						
+			}
+			else {
+				head = tail = null ;  // if single element 
+			}
+		}
+		
+	}
+	
+	
+	public void deleteAtEnd() {
+		if(head== null) {
+			System.out.println("List is Empty") ;
+		}
+		else {
+			if(head!=tail) {
+				Node current = head ;
+				while(current.next!=tail) {
+					
+					current = current.next ;
+							
+				}
+				
+				tail = current ;
+				tail.next = null ;
+			}
+			else {
+				head = tail = null ;
+			}
+		}
+	}
+	
+	public void deleteAtPosition(int pos) {
+		
+		if(head==null) {
+			System.out.println("List is empty");
+		}
+		
+		if(pos==1) {
+			head = tail = null ;
+		}
+		else {
+			Node current = head ;
+		    Node prev = current ;
+			int i=0 ;
+			while(i<pos-1) {
+				 prev = current ;
+				current = current.next ;
+				
+				if(current==null)
+					System.out.println("Position Out of Range");
+				
+				
+				i++ ;
+			}
+			prev.next = current.next ;
+		
+			
+		}
+		
+	}
+	
+	
+	public void Reverse() {
+		Node current = head ;
+		
+		Node previous = null ;
+		
+		Node nextNode = null ;
+		
+		while(current.next!=null) {
+			
+			nextNode = current.next ;
+			current = previous ;
+			previous = current ;
+			current = nextNode ;
+		}
+		head = previous ;
+//		
+//		Node l = head ;
+//		System.out.println("Checking node Reverse");
+//		while(current != null) {  
+//            //Prints each node by incrementing pointer  
+//            System.out.print(current.data + " ");  
+//            current = current.next;  
+//        }  
+//        System.out.println(); 
+		
+		
 	}
 	
 	
@@ -90,7 +189,7 @@ public class LinkedListInsertion {
             System.out.println("List is empty");  
             return;  
         }  
-        System.out.println("Adding nodes to the list: ");  
+        System.out.println("Adding/Deleting nodes to the list: ");  
         while(current != null) {  
             //Prints each node by incrementing pointer  
             System.out.print(current.data + " ");  
@@ -129,9 +228,18 @@ public class LinkedListInsertion {
 	        sList.addAtPosition(6,2);
 	        sList.display();
 	        
-	        sList.addAtPosition(9,9);
+//	        sList.addAtPosition(9,9);
+//	        sList.display();
+//	        
+	        sList.deleteAtBegining();
 	        sList.display();
-
+         
+	        sList.deleteAtPosition(3);
+	        sList.display();
+	        
+	        System.out.println("Reverse");
+	        sList.Reverse();
+	        sList.display();
 
 	}
 

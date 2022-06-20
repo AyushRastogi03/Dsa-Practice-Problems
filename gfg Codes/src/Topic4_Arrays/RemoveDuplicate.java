@@ -36,7 +36,10 @@ public class RemoveDuplicate {
 		}
 				
 	}
-	System.out.println(res);
+	  
+	for(int i=0;i<arr.length;i++) {
+		System.out.print(arr[i] + " ");
+	}
 
 
 	}
@@ -60,7 +63,7 @@ public class RemoveDuplicate {
 			ae[i] = temp[i];
 		}
 		
-		return ae ;
+		return temp ;
 	}
 
 }
